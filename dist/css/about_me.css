@@ -1,0 +1,15 @@
+.column-2 > p {
+  font-size: 1.5rem; }
+
+.flex-columns h2 {
+  align-self: center; }
+
+.column .heading-me {
+  font-size: 5rem; }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  #navbar .logo {
+    font-size: 1rem; }
+  .column .heading-me {
+    font-size: 3rem; } }

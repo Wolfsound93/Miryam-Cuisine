@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/841bf6e970.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/utillities.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/about_me.css" />
+    <title>Myriam's Cuisine</title>
+  </head>
+  <body id="about">
+    <!-- NAVBAR -->
+    <div class="navbar top" id="navbar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+      <h1 class="logo">
+        <span class="text-primary">
+          <i class="fas fa-stroopwafel"></i> Myriam’s</span
+        >
+        Cuisine
+      </h1>
+    </div>
+    <main>
+      <!-- ABOUT ME -->
+      <section class="solutions flex-columns flex-reverse" id="about">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img
+                src="images/home/99293406_236652437783665_4926976385055981568_n.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h2 class="heading-me">About me</h2>
+              <p>
+                Growing up in Casablanca I have always been enchanted and drawn
+                to the special seasonings and tastes of the Moroccan kitchen. My
+                parents were from the north of Morocco so I have a great
+                appreciation of Spanish cuisine and its influences as well as
+                the finesse and elegance of French cuisine, from the French
+                culture of Casablanca, and from my close family ties in Europe.
+                After making aliyah to Israel I continued to blossom and learn.
+                I embraced the specialties of Israel and the Mediterranean,
+                refining them, and making them my own. I graduated with
+                outstanding achievement from the famous Tadmor culinary
+                institute where I gained a more professional approach and a
+                keener sense of quality and creativity. As part of my personal
+                development I was awarded an internship in Paris, France where I
+                grabbed the opportunity to soak up all that I could and learn
+                the tricks that make a dish elevated. I have also worked as food
+                and beverage controller for the Hilton Tel Aviv hotel. This
+                experience made it clear to me that I am at home professionally
+                and personally suited to the culinary arts and the pleasure that
+                they can bring to people, especially for celebrations, but even
+                for just simple enjoyment. Today the Dallas area is my home and
+                where people have come to know me and my abilities.
+                Dallas.eater.com gave me recognition and acclaim for my
+                sufganiyot (Donuts) during the Hanukkah season of which I am
+                very proud. I offer customized cakes of different styles and
+                designs at reasonable prices, to dessert table catering for
+                private events, to hearty family meals targeted to your personal
+                taste, be it Israeli or Moroccan. When it comes down to it, the
+                quality and love put in to every thing I prepare makes me
+                confident that I will earn a spot in you heart.
+              </p>
+              <!-- <a href="" class="btn btn-outline">
+                <i class="fas fa-chevron"></i>
+                Read more
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="https://www.facebook.com/Myriam.Gold.Cuisine" target="_blank"
+          ><i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/myriamgoldwin/?r=nametag&fbclid=IwAR2_YEiVIPYz8RLyWFlIDTSkvIp4Sgm7AnB3Pyblvi8seUdPy9XlTO94uL8"
+          target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a href="tel:9724394026"><i class="fab fa-whatsapp fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2020 - Myriam's Cuisine</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
