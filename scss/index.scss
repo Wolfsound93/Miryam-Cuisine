@@ -51,6 +51,11 @@ img {
   top: 0px;
   padding: 0 30px;
   transition: 0.3s ease-in;
+
+  img {
+    width: 45px;
+    height: 40px;
+  }
 }
 
 .navbar.top {
@@ -73,6 +78,7 @@ img {
 .navbar .logo {
   font-weight: 400;
   cursor: pointer;
+  display: flex;
 }
 
 /* Header */

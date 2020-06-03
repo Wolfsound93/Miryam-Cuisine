@@ -166,6 +166,9 @@ img {
   top: 0px;
   padding: 0 30px;
   transition: 0.3s ease-in; }
+  .navbar img {
+    width: 45px;
+    height: 40px; }
 
 .navbar.top {
   background: transparent; }
@@ -182,7 +185,8 @@ img {
 
 .navbar .logo {
   font-weight: 400;
-  cursor: pointer; }
+  cursor: pointer;
+  display: flex; }
 
 /* Header */
 .hero {
